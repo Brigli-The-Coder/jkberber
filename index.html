@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
-:root{--a1:#7c6aff;--a2:#c47eff;--glow:rgba(124,106,255,0.45);--glow2:rgba(124,106,255,0.22);--bg:#080c14;--text:#f0f4ff;--muted:rgba(240,244,255,.55);--card:rgba(255,255,255,.055);--border:rgba(255,255,255,.1)}
+:root{--a1:#ffd700;--a2:#ffb347;--glow:rgba(255,215,0,0.45);--glow2:rgba(255,215,0,0.22);--bg:#0d0a00;--text:#f0f4ff;--muted:rgba(240,244,255,.55);--card:rgba(255,255,255,.055);--border:rgba(255,255,255,.1)}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{width:100%;min-height:100vh;overflow-x:hidden}
 body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;position:relative}
@@ -53,8 +53,7 @@ body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;posi
 <div class="page">
   <div class="avatar-zone">
     <div class="avatar-halo">
-      <div class="avatar-inner"><img src="https://www.instagram.com/jkberber?igsh=OHczanpyMmF4aTdq" alt="JK Barber Shop" onerror="this.style.display='none';document.getElementById('_fb').style.display='flex'">
-        <div id="_fb" class="avatar-initial" style="display:none">J</div></div>
+      <div class="avatar-inner"><div class="avatar-initial">J</div></div>
     </div>
   </div>
   <h1 class="display-name">JK Barber Shop</h1>
@@ -67,6 +66,16 @@ body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;posi
       <div class="li-text">
         <span class="li-platform">Instagram</span>
         <span class="li-handle">@jkberber</span>
+      </div>
+      <i class="fas fa-arrow-right li-arrow"></i>
+    </a>
+    <a class="link-card" href="https://wa.me/+355689038112" target="_blank" rel="noopener noreferrer" style="animation-delay:0.37s">
+      <div class="li-icon" style="background:#25D36620;color:#25D366">
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <div class="li-text">
+        <span class="li-platform">WhatsApp</span>
+        <span class="li-handle">++355689038112</span>
       </div>
       <i class="fas fa-arrow-right li-arrow"></i>
     </a>
@@ -84,7 +93,7 @@ var scene=new THREE.Scene();
 var fov=window.innerWidth<500?80:65;
 var camera=new THREE.PerspectiveCamera(fov,window.innerWidth/window.innerHeight,0.1,1000);
 camera.position.set(0,20,30);camera.lookAt(0,0,0);
-var color3=0x7c6aff;
+var color3=0xffd700;
 var COLS=72,ROWS=72,SP=0.55,COUNT=COLS*ROWS;
 var bX=new Float32Array(COUNT),bZ=new Float32Array(COUNT);
 var p1=new Float32Array(COUNT*3),p2=new Float32Array(COUNT*3);
